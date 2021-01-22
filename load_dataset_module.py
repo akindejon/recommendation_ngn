@@ -1,5 +1,12 @@
 import csv
 import pandas as pd
+
+from zipfile import ZipFile
+with ZipFile('data.zip', 'r') as zip:
+    zip.extractall()
+
+
+
 # list of features to retrive from the dataset
 features_to_retrieve = ['acousticness', 'artists', 'danceability', 'energy', 'id', 'liveness',
                             'loudness', 'name', 'popularity', 'speechiness', 'tempo','valence']
