@@ -162,6 +162,6 @@ if __name__ == "__main__":
     elif query1 == 3:
         query4 = st.number_input(f"How many similar music should we return", min_value=1, max_value=1000)
     data  = main(query1, query2, query3, query4)
-    similar_dict = {1: "artist", 2 :"music", 3 :"music for artist"}
+    similar_dict = {1: "music", 2 :"artist", 3 :"music for artist"}
     st.write(f"Top {query4} number of similar {similar_dict[query1]} are\n")
     st.dataframe(data)
