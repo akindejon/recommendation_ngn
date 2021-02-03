@@ -135,9 +135,9 @@ def main(query1, query2, query3, query4):
 if __name__ == "__main__":
     st.title("Music Recommendation Engine")
     st.subheader("This application helps you find the most similar music or artist to an already selected music or artist")
-    query1 = st.number_input("We offer three different services please choose?\n\
-                    Enter 1 for finding top similar music\n\
-                    Enter 2 for finding top similar artist\n\
+    query1 = st.number_input("We offer three different services please choose?\n
+                    Enter 1 for finding top similar music\n
+                    Enter 2 for finding top similar artist\n
                     Enter 3 for finding top similar music based on a particular artist\n",
                      min_value= 1, max_value= 3)
     if query1 == 1:
@@ -145,10 +145,10 @@ if __name__ == "__main__":
     elif query1 == 2 or query1 == 3:
         query2 = st.number_input("Enter the artist id: ", min_value = 1, max_value= 30000)
     query3 = st.number_input("What similarity metric should we use?\n\
-                          Enter 1 for euclidean\n\
-                              Enter 2 for cosine\n\
-                                  Enter 3 for correlation\n\
-                                      Enter 4 for jaccard coefficient\n\
+                          Enter 1 for euclidean\n
+                              Enter 2 for cosine\n
+                                  Enter 3 for correlation\n
+                                      Enter 4 for jaccard coefficient\n
                                           Enter 5 for manhattan\n",
                     min_value= 1, max_value=5)
     if query1 == 1:
