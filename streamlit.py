@@ -145,10 +145,10 @@ if __name__ == "__main__":
     elif query1 == 2 or query1 == 3:
         query2 = st.number_input("Enter the artist id: ", min_value = 1, max_value= 30000)
     query3 = st.number_input("What similarity metric should we use?\n\
-                          Enter 1 for euclidean\n
-                              Enter 2 for cosine\n
-                                  Enter 3 for correlation\n
-                                      Enter 4 for jaccard coefficient\n
+                          Enter 1 for euclidean\n\
+                              Enter 2 for cosine\n\
+                                  Enter 3 for correlation\n\
+                                      Enter 4 for jaccard coefficient\n\
                                           Enter 5 for manhattan\n",
                     min_value= 1, max_value=5)
     if query1 == 1:
