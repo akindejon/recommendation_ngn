@@ -130,10 +130,6 @@ def main(query1, query2, query3, query4):
     if query1 == "3":
         simil.compute_similar_music_for_artist(artist_id=query2, similarity_func=similar_dict[query3], n=query4)
 
-        
-    
-
-
 
                 
 if __name__ == "__main__":
